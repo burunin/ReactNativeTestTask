@@ -21,7 +21,7 @@ export default function Welcome({ navigation }: Props) {
   return (
     <>
       <Image
-        source={require("../../assets/img/bg-main.png")}
+        source={require("../../assets/img/bg-welcome.png")}
         style={styles.Background}
       />
       <View style={styles.container}>
@@ -43,7 +43,7 @@ export default function Welcome({ navigation }: Props) {
           </TouchableHighlight>
         </View>
         <View style={styles.descriptionContainer}>
-          <Link to={"/description"}>
+          <Link to={"/About"}>
             <Image source={require("../../assets/img/about.png")} />
           </Link>
           <Text
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   srLogo: {
     alignItems: "flex-end",
     width: "100%",
-    top: "10%",
+    top: "5%",
   },
   title: {
     position: "absolute",

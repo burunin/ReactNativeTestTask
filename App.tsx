@@ -7,7 +7,7 @@ import AppContainer from "./src/navigation/AppNavigation";
 const App = () => {
   return (
     <View style={{ flex: 1 }}>
-        <AppContainer />
+      <AppContainer />
     </View>
   );
 };
