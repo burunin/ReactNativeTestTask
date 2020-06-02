@@ -52,6 +52,7 @@ export const YourHobbies = () => {
         <Text style={styles.inputLabel}>How you spend your free time?</Text>
         <TextInput
           style={styles.inputFormLg}
+          numberOfLines={4}
           placeholder="hobbies, sport, etc..."
           onChangeText={(text) => handleInputFreeTime(text)}
           value={fifthStepState.freeTimeSpendInfo}
@@ -62,6 +63,7 @@ export const YourHobbies = () => {
         <Text style={styles.inputLabel2}>Have any questions for us?</Text>
         <TextInput
           style={styles.inputFormLg}
+          numberOfLines={4}
           placeholder="Be in touch :)"
           onChangeText={(text) => handleInputToUs(text)}
           value={fifthStepState.questionsToUs}
