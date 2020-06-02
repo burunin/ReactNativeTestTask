@@ -22,24 +22,24 @@ export default function Welcome({ navigation }: Props) {
     <>
       <Image
         source={require("../../assets/img/bg-welcome.png")}
-        style={styles.Background}
+        style={styles.welcomeBackground}
       />
-      <View style={styles.container}>
+      <View style={styles.welcomeContainer}>
         <Image
           source={require("../../assets/img/logo.png")}
-          style={styles.srLogo}
+          style={styles.welcomeLogo}
         />
-        <Text style={styles.title}>Welcome!</Text>
-        <View style={styles.touchableContainer}>
-          <Text style={styles.touchableTitle}>
+        <Text style={styles.welcomeTitle}>Welcome!</Text>
+        <View style={styles.welcomeTouchableContainer}>
+          <Text style={styles.welcomeTouchableTitle}>
             Want to be a part of a team?
           </Text>
           <TouchableHighlight
             underlayColor="#fff"
-            style={styles.touchableSendForm}
+            style={styles.welcomeSendForm}
             onPress={() => navigation.navigate("PersonalInfo")}
           >
-            <Text style={styles.touchableText}>Send Form</Text>
+            <Text style={styles.welcomeTouchableText}>Send Form</Text>
           </TouchableHighlight>
         </View>
         <View style={styles.descriptionContainer}>
@@ -59,12 +59,12 @@ export default function Welcome({ navigation }: Props) {
 }
 
 const styles = StyleSheet.create({
-  srLogo: {
+  welcomeLogo: {
     alignItems: "flex-end",
     width: "100%",
     top: "5%",
   },
-  title: {
+  welcomeTitle: {
     position: "absolute",
     top: "42%",
     width: 320,
@@ -77,14 +77,14 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#FFFFFF",
   },
-  Background: {
+  welcomeBackground: {
     position: "absolute",
     width: "100%",
     height: "100%",
     flex: 1,
     zIndex: -1,
   },
-  touchableSendForm: {
+  welcomeSendForm: {
     backgroundColor: "#7A4ED9",
     justifyContent: "center",
     alignItems: "center",
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
   },
-  touchableText: {
+  welcomeTouchableText: {
     color: "#FFF",
     paddingTop: 2,
     paddingBottom: 2,
@@ -102,18 +102,18 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     lineHeight: 28,
   },
-  container: {
+  welcomeContainer: {
     zIndex: 0,
     alignItems: "center",
     flex: 1,
     backgroundColor: "rgba(0, 7, 69, 0.7)",
   },
-  touchableContainer: {
+  welcomeTouchableContainer: {
     position: "absolute",
     width: "70%",
     top: "60%",
   },
-  touchableTitle: {
+  welcomeTouchableTitle: {
     color: "#FFF",
     fontWeight: "600",
     fontSize: 20,

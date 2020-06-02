@@ -1,0 +1,7 @@
+
+export const FINISH_FIRST = 'FINISH_FIRST';
+export const FINISH_SECOND = 'FINISH_SECOND';
+export const FINISH_THIRD = 'FINISH_THIRD';
+export const FINISH_FOURTH = 'FINISH_FOURTH';
+export const FINISH_FIFTH = 'FINISH_FIFTH';
+
